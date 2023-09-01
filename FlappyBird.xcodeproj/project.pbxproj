@@ -13,6 +13,9 @@
 		C843607E2A95D2650082EF6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C843607C2A95D2650082EF6F /* Main.storyboard */; };
 		C84360802A95D26D0082EF6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C843607F2A95D26D0082EF6F /* Assets.xcassets */; };
 		C84360832A95D26D0082EF6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84360812A95D26D0082EF6F /* LaunchScreen.storyboard */; };
+		C843608B2A95E3E80082EF6F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C843608A2A95E3E80082EF6F /* GameScene.swift */; };
+		C877849E2AA2928500A69471 /* 決定ボタンを押す26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C877849D2AA2928500A69471 /* 決定ボタンを押す26.mp3 */; };
+		C889D2632AA271C900C9AC0C /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C889D2622AA271C800C9AC0C /* bgm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C843607F2A95D26D0082EF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84360822A95D26D0082EF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C84360842A95D26D0082EF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C843608A2A95E3E80082EF6F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C877849D2AA2928500A69471 /* 決定ボタンを押す26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "決定ボタンを押す26.mp3"; sourceTree = "<group>"; };
+		C889D2622AA271C800C9AC0C /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 				C84360762A95D2650082EF6F /* AppDelegate.swift */,
 				C84360782A95D2650082EF6F /* SceneDelegate.swift */,
 				C843607A2A95D2650082EF6F /* ViewController.swift */,
+				C843608A2A95E3E80082EF6F /* GameScene.swift */,
 				C843607C2A95D2650082EF6F /* Main.storyboard */,
 				C843607F2A95D26D0082EF6F /* Assets.xcassets */,
 				C84360812A95D26D0082EF6F /* LaunchScreen.storyboard */,
 				C84360842A95D26D0082EF6F /* Info.plist */,
+				C877849D2AA2928500A69471 /* 決定ボタンを押す26.mp3 */,
+				C889D2622AA271C800C9AC0C /* bgm.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -128,6 +137,8 @@
 				C84360832A95D26D0082EF6F /* LaunchScreen.storyboard in Resources */,
 				C84360802A95D26D0082EF6F /* Assets.xcassets in Resources */,
 				C843607E2A95D2650082EF6F /* Main.storyboard in Resources */,
+				C889D2632AA271C900C9AC0C /* bgm.mp3 in Resources */,
+				C877849E2AA2928500A69471 /* 決定ボタンを押す26.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +151,7 @@
 			files = (
 				C843607B2A95D2650082EF6F /* ViewController.swift in Sources */,
 				C84360772A95D2650082EF6F /* AppDelegate.swift in Sources */,
+				C843608B2A95E3E80082EF6F /* GameScene.swift in Sources */,
 				C84360792A95D2650082EF6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +305,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +314,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.jou.oonishi.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +336,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.jou.oonishi.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

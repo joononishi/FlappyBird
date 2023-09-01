@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  FlappyBird
-//
-//  Created by Jo Onishi on 8/23/23.
-//
 
 import UIKit
 
